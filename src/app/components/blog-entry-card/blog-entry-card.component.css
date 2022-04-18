@@ -1,0 +1,62 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    flex-grow: 1;
+    width: 90vw;
+    max-width: 100%;
+}
+
+.back-button {
+    width: 10rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.content {
+    flex-grow: 1;
+    min-height: 15rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button:hover {
+    border-color: black;
+}
+
+button:active {
+    background-color: lightgray;
+}
+
+input.ng-touched.ng-invalid {
+    border: 1px solid red;
+    background-color: lightpink;
+}
+
+.back-button img {
+    height: 1.5rem;
+}
+
+.back-button span {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+button[type='submit'] {
+    width: 7rem;
+}

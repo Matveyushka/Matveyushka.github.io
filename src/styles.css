@@ -1,0 +1,18 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+.panel {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+}

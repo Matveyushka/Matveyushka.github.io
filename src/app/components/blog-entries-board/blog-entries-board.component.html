@@ -1,0 +1,34 @@
+<div class="board d-flex justify-content-center flex-wrap align-self-center">
+    <div *ngIf="isLoading; then loading else loaded"></div>
+
+    <ng-template #loading class="no-entries">
+        <div class="loading">
+            <div class="spinner-border" role="status"></div>
+        </div>
+    </ng-template> 
+    
+    <ng-template #loaded>
+        <div class="board-entry-ticket-wrapper p-3" *ngFor="let entry of blogEntries">
+            <div class="panel p-0 board-entry-ticket d-flex flex-column">
+                <div class="board-entry-ticket-title p-3">
+                    {{entry.title}}
+                    <div class="hider"></div>
+                    <a class="edit" routerLink="/card/{{entry.id}}">
+                        <img src="../../../assets/edit-svgrepo-com.svg">
+                    </a>
+                </div>
+                <div class="board-entry-ticket-content p-3">{{entry.content}}
+                    <div class="hider"></div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="blogEntries.length === 0" class="no-entries">
+            Записей нету!
+        </div>
+    </ng-template>
+
+    <button class="new-entry" routerLink="/new">
+        <img src="../../../assets/plus-svgrepo-com.svg">
+    </button>
+</div>

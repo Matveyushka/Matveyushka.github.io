@@ -1,0 +1,92 @@
+.board {
+    position: relative;
+}
+
+.board-entry-ticket {
+    width: 24rem;
+    height: 20rem;
+}
+
+.board-entry-ticket:hover {
+    border: 1px solid black;
+}
+
+.board-entry-ticket:hover .board-entry-ticket-title {
+    border-bottom: 1px solid black;
+}
+
+.board-entry-ticket:hover .edit {
+    display: flex;
+}
+
+.board-entry-ticket-title {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+    height: 5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.board-entry-ticket-content {
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+    text-align: justify;
+    text-justify: inter-word;
+    white-space: pre-line;
+}
+
+.hider {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2rem;
+    background: linear-gradient(transparent, white);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.edit {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    height: 100%;
+    background-color: white;
+    border-top-right-radius: 0.5rem;
+    background: linear-gradient(to right, transparent, 10%, white);
+}
+
+.edit img {
+    height: 1.5rem;
+}
+
+.new-entry {
+    z-index: 1000;
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+}
+
+.new-entry:hover {
+    border: 1px solid black;
+}
+
+.new-entry:active {
+    background-color: lightgrey;
+}
+
+.loading, .no-entries {
+    padding-top: 7rem;
+}
