@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/board', pathMatch: 'full' },
   { path: 'board', component: BlogEntriesBoardComponent },
   { path: 'card/:id', component: BlogEntryCardComponent },
+  { path: 'new', component: BlogEntryCardComponent },
   { path: '**', redirectTo: '/board' }
 ]
 
